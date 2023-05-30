@@ -12,15 +12,9 @@ const App=()=>
            <Route path="navbar" element={<Navbar/>}/>
            <Route path="footer" element={<Footer/>}/>
            <Route path="/" element={<Home/>}/>
-           <Routes>
            <Route path="login" element={<LogIn/>}/> 
-        </Routes>
-        <Routes>
            <Route path="register" element={<SignUp/>}/> 
-        </Routes>
-        <Routes>
-           <Route path="forget" element={<Forget/>}/> 
-        </Routes>
+           <Route path="forget" element={<Forget/>}/>
            </Routes>
         </Router>
     )
