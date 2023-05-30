@@ -6,13 +6,13 @@ export default function Navbar() {
 
     return (
         <nav className="w-full bg-white shadow fixed z-50">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <div className="justify-between px-4 mx-auto lg:max-w-7xl lg:items-center lg:flex lg:px-8">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex items-center justify-between py-3 md:py-5 lg:block">
                         <a href="/">
                             <img src={logo1} alt="logo of the website" className="w-10 h-10 cursor-pointer" />
                         </a>
-                        <div className="md:hidden">
+                        <div className="lg:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
@@ -52,11 +52,11 @@ export default function Navbar() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0  ${
+                        className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0  ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
                             <li className="text-black hover:text-indigo-400">
                                 <a href="/">Home</a>
                             </li>
@@ -71,32 +71,32 @@ export default function Navbar() {
                             </li>
                         </ul>
 
-                        <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+                        <div className="mt-3 py-2 lg:hidden flex justify-between items-center gap-3">
                     <a
                         href="/login"
-                        className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+                        className="inline-block w-full px-4 py-2 text-center text-white bg-indigo-300 rounded-md shadow hover:bg-gray-800"
                     >
                         Sign in
                     </a>
                     <a
                         href="/register"
-                        className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+                        className="inline-block w-full px-4 py-2 text-center text-white bg-pink-300 rounded-md shadow hover:bg-gray-800"
                     >
                         Sign up
                     </a>
                 </div>
                     </div>
                 </div>
-                <div className="hidden space-x-2 md:inline-block">
+                <div className="hidden space-x-2 lg:inline-block">
                     <a
                         href="/login"
-                        className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+                        className="px-4 py-2 text-white bg-indigo-400 rounded-md shadow hover:bg-gray-800"
                     >
                         Sign in
                     </a>
                     <a
                         href="/register"
-                        className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+                        className="px-4 py-2 text-white bg-pink-400 rounded-md shadow hover:bg-gray-800"
                     >
                         Sign up
                     </a>

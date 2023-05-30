@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { Footer, Navbar } from "../NavigationBars";
 import logo1 from "../images/logo1.png";
 import { EyeClose, EyeIcon } from "../svgs";
 
@@ -9,7 +10,9 @@ const SignUp = () => {
     const navigate = useNavigate();
 
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center gap-5 px-5 py-5">
+    <>
+    <Navbar/>
+    <div className="w-full h-auto flex flex-col justify-center items-center gap-5 px-5 py-36">
       <img
         src={logo1}
         className="w-44 h-28 rounded-md"
@@ -101,6 +104,8 @@ const SignUp = () => {
 
       </form>
     </div>
+    <Footer/>
+    </>
   );
 };
 

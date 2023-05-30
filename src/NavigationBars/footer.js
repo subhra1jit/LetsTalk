@@ -14,11 +14,12 @@ const Footer = () => {
     <div>
       <div className="w-full flex md:flex-col flex-row justify-center items-center bg-white gap-5 py-10">
         <div className="flex w-1/2 md:w-full md:justify-center md:flex-row flex-col gap-2 md:gap-5 justify-start px-5">
-          {ListItems.map((data) => {
+          {ListItems.map((data,index) => {
             return (
               <a
                 className="no-underline text-gray-400 text-sm hover:text-purple-500"
                 href={data.href}
+                key={index}
               >
                 {data.name}
               </a>
