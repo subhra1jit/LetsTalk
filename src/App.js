@@ -1,12 +1,12 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-
+import Chat from "./ChatFolder/chat";
 
 const App=()=>
 {
     return(
         <Router>
             <Routes>
-                <Route/>
+                <Route path="/chat" element={<Chat/>}/>
             </Routes>
         </Router>
     )
