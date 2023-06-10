@@ -3,6 +3,7 @@ import Footer from "./NavigationBars/footer";
 import Navbar from "./NavigationBars/navbar";
 import { Forget, LogIn, SignUp } from "./authpages/index";
 import Home from "./home";
+import Chat from "./ChatFolder/chat";
 
 const App=()=>
 {
@@ -15,7 +16,8 @@ const App=()=>
            <Route path="login" element={<LogIn/>}/> 
            <Route path="register" element={<SignUp/>}/> 
            <Route path="forget" element={<Forget/>}/>
-           </Routes>
+           <Route path="/chat" element={<Chat/>}/>
+            </Routes>
         </Router>
     )
 }
